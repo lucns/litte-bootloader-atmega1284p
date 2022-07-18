@@ -1,0 +1,34 @@
+##############################################################
+
+InternalOptiboot1284p.name=ATmega1284P Internal
+InternalOptiboot1284p.build.mcu=atmega1284p
+InternalOptiboot1284p.upload.protocol=arduino
+InternalOptiboot1284p.upload.tool=avrdude
+InternalOptiboot1284p.bootloader.tool=avrdude
+InternalOptiboot1284p.bootloader.unlock_bits=0x3F
+InternalOptiboot1284p.bootloader.lock_bits=0x2F
+InternalOptiboot1284p.build.board=AVR_ATMEGA1284P
+InternalOptiboot1284p.build.core=arduino:arduino
+InternalOptiboot1284p.build.variant=atmega1284p
+
+menu.clock=Clock Speed
+
+InternalOptiboot1284p.menu.clock.1MHz=1MHz 4800bps
+InternalOptiboot1284p.menu.clock.1MHz.build.f_cpu=1000000L
+InternalOptiboot1284p.menu.clock.1MHz.upload.speed=4800
+InternalOptiboot1284p.menu.clock.1MHz.bootloader.low_fuses=0x62
+InternalOptiboot1284p.menu.clock.1MHz.bootloader.high_fuses=0xDE
+InternalOptiboot1284p.menu.clock.1MHz.bootloader.extended_fuses=0xFF
+InternalOptiboot1284p.menu.clock.1MHz.bootloader.file=custom/optiboot_atmega1284p_bootloader_1MHz_4800bps.hex
+InternalOptiboot1284p.menu.clock.1MHz.upload.maximum_size=130048
+
+InternalOptiboot1284p.menu.clock.8MHz=8MHz 38400bps
+InternalOptiboot1284p.menu.clock.8MHz.build.f_cpu=8000000L
+InternalOptiboot1284p.menu.clock.8MHz.upload.speed=38400
+InternalOptiboot1284p.menu.clock.8MHz.bootloader.low_fuses=0xE2
+InternalOptiboot1284p.menu.clock.8MHz.bootloader.high_fuses=0xDC
+InternalOptiboot1284p.menu.clock.8MHz.bootloader.extended_fuses=0xFD
+InternalOptiboot1284p.menu.clock.8MHz.bootloader.file=custom/optiboot_atmega1284p_bootloader_8Mhz_38400bps.hex
+InternalOptiboot1284p.menu.clock.8MHz.upload.maximum_size=130048
+
+##############################################################
